@@ -43,7 +43,7 @@
 - kotlin
   
   ```kotlin
-  HardWareKeepLive.Builder() // 初始化builder
+   HardWareKeepLive.Builder() // 初始化builder
               .setBaseUrl("http://127.0.0.1:11220") //设置接口地址
               .setIsDebug(true) //设置是否是debug模式，用于内部打印
               .setRetryTimes(3) //设置重试次数,不设置默认三次
@@ -69,7 +69,7 @@
                   }
               })
               .build() // 构造liveCheck
-              .startCheckHardWareLive(this, 1000) // 开始检查 1000ms一次
+              .startCheckHardWareLive(context, 1000) // 开始检查 1000ms一次
   ```
 
 - java
@@ -99,7 +99,7 @@
   
                       }
                   });
-          builder.build().startCheckHardWareLive(c); // 开始检测 默认 3000ms 检测一次
+          builder.build().startCheckHardWareLive(context); // 开始检测 默认 3000ms 检测一次
   ```
 
 

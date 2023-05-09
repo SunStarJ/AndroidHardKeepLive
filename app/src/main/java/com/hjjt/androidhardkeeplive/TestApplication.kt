@@ -14,6 +14,8 @@ import com.hjjt.hardware_keep.HardWareKeepLive
  * @CreateDate:     2023/5/8 16:03
  */
 class TestApplication : Application() {
+
+    val context = this
     val TAG = "TestApplication"
 
     override fun onCreate() {
@@ -44,6 +46,6 @@ class TestApplication : Application() {
                 }
             })
             .build() // 构造liveCheck
-            .startCheckHardWareLive(this, 1000) // 开始检查 1000ms一次
+            .startCheckHardWareLive(context, 1000) // 开始检查 1000ms一次
     }
 }

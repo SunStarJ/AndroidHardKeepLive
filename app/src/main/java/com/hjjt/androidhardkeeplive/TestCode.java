@@ -14,7 +14,7 @@ import com.hjjt.hardware_keep.HardWareKeepLive;
  */
 public class TestCode {
 
-    public void test(Context c){
+    public void test(Context context){
         HardWareKeepLive.Builder builder = new HardWareKeepLive.Builder() // 构造builder
                 .setIsDebug(false) // 设置debug模式
                 .setBaseUrl("http://127.0.0.1:11220") // 设置接口地址
@@ -39,6 +39,6 @@ public class TestCode {
 
                     }
                 });
-        builder.build().startCheckHardWareLive(c); // 开始检测 默认 3000ms 检测一次
+        builder.build().startCheckHardWareLive(context); // 开始检测 默认 3000ms 检测一次
     }
 }
