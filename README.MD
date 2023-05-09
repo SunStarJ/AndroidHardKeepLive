@@ -1,10 +1,10 @@
 ## Android 硬件守护程序
 
-#### 引入
+### 引入
 
-#### 注意事项
+### 注意事项
 
-Android 9.0后 http 请求不再支持，需要添加http请求过滤，防止系统拦截
+**Android 9.0后 http 请求不再支持，需要添加http请求过滤，防止系统拦截**
 
 - 主工程res/xml目录下创建 network_security_config.xml
 
@@ -38,7 +38,7 @@ Android 9.0后 http 请求不再支持，需要添加http请求过滤，防止�
   
   ```
 
-#### 使用
+### 使用
 
 - kotlin
   
