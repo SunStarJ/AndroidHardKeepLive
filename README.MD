@@ -2,6 +2,25 @@
 
 ### 引入
 
+- 导入jitpack
+  
+  ```groovy
+  allprojects {
+  		repositories {
+  			...
+  			maven { url 'https://jitpack.io' }
+  		}
+  	}
+  ```
+
+- 导入依赖
+  
+  ```groovy
+  dependencies {
+  	        implementation 'com.github.SunStarJ:AndroidHardKeepLive:0.0.1_beta'
+  	}
+  ```
+
 ### 注意事项
 
 **Android 9.0后 http 请求不再支持，需要添加http请求过滤，防止系统拦截**
