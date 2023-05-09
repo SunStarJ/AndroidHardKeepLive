@@ -17,7 +17,7 @@
   
   ```groovy
   dependencies {
-  	        implementation 'com.github.SunStarJ:AndroidHardKeepLive:0.0.1_beta'
+  	        implementation 'com.github.SunStarJ:AndroidHardKeepLive:0.0.2_beta'
   	}
   ```
 
