@@ -54,6 +54,10 @@ class HardWareKeepLive private constructor(val builder: Builder) {
                     try {
                         val response = okhttpClient.newCall(createRequest()).execute()
                         if (response.isSuccessful) {
+                            if(lost){
+                                builder.connectListener?.reConnected()
+                                lost = false
+                            }
                             print("硬件存活")
                         } else {
                             restartAndroidServer()
